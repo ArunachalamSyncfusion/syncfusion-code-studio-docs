@@ -141,42 +141,13 @@ Create a comprehensive sales dashboard with interactive charts and data filterin
 ```
 
 ```
-Build a user registration form with validation rules and error handling using Syncfusion WinForms controls.
-```
-
-```
-Develop a responsive product catalog with search and categorization using Syncfusion JavaScript components.
-```
-
-```
-Build a React-based employee management system with data grid, search capabilities, filtering options, and export functionality using Syncfusion React components.
-```
-
-```
-Create an employee management page using the Angular Grid Component with CRUD operations.
-```
-
-```
-Enhance an inventory management dashboard Blazor application using Syncfusion components with search, filtering, and export capabilities.
-```
-
-```
-Create a project management application using React Syncfusion components with Kanban boards, Gantt charts, and team collaboration features.
-```
-
-```
-Enhance a mobile-optimized field service MAUI application using Syncfusion components.
-```
-
-```
-Build a healthcare management system Vue application using Syncfusion components with the Material Design theme.
+Extend the existing React dashboard application using Syncfusion components to include notification system and real-time updates.
 ```
 
 ### Prompt Requirements
 
 #### ✅ Must Include:
 - The word "Syncfusion" (required to activate UI Builder)
-- The word "components" (ensures proper tool activation)
 - Platform specification (React, Angular, Vue, Blazor, etc.)
 - Clear description of functionality needed
 
@@ -235,32 +206,35 @@ Optimize the customer management system implementation of the Angular applicatio
 ### Common Issues
 
 **UI Builder Not Activating**
-- Ensure "Syncfusion" and "components" keywords are in the prompt
-- Verify the UI Builder tool is selected.
-- Check AI model configuration and API key
+- Confirm that the prompt includes the "Syncfusion" keyword and the platform name.
+- Verify that the UI Builder tool is set to either Automatic or Ask First mode.
 
-**Incorrect Platform Implementation**
-- Specify platform explicitly in prompt
-- Request platform conversion: "Convert to Angular implementation"
+**Incorrect Platform Detection**
+- Specify platform explicitly in the prompt.
 
 **Generic Implementation**
-- Provide more specific requirements
-- Include business context and constraints
-- Request detailed implementation examples
+- Provide more specific requirements.
+- Include business context and constraints.
+- Request detailed implementation examples.
 
 ## FAQ
 
-**Q: Does UI Builder create complete applications?**
-A: UI Builder provides the necessary component information and metadata that enables Code Studio to implement specific features using existing Syncfusion components. You integrate these implementations into your application structure.
+**Does UI Builder create complete applications?**
 
-**Q: Can I modify the implemented features?**
-A: Yes! The implemented code using Syncfusion components is yours to customize and extend as needed.
+UI Builder provides the necessary component information and metadata that enables Code Studio to implement specific features using existing Syncfusion components. You integrate these implementations into your application structure.
 
-**Q: Which AI models work best?**
-A: GPT-4 and Claude provide optimal results. Configure your preferred model in Code Studio settings.
+**Can I modify the implemented features?**
 
-**Q: Is there a limit on feature implementation?**
-A: There are no limits on the number of features you can implement, subject to your AI model usage limits.
+Yes! The implemented code using Syncfusion components is yours to customize and extend as needed.
 
-**Q: Can UI Builder work with existing projects?**
-A: Yes! UI Builder provides the component information that enables the implementation of features using Syncfusion components that integrate with existing codebases.
+**Which AI models work best?**
+
+GPT-4 and Claude provide optimal results. Configure your preferred model in Code Studio settings.
+
+**Is there a limit on feature implementation?**
+
+There are no limits on the number of features you can implement, subject to your AI model usage limits.
+
+**Can UI Builder work with existing projects?**
+
+Yes! UI Builder provides the component information that enables the implementation of features using Syncfusion components that integrate with existing codebases.

@@ -102,6 +102,7 @@ UI Builder provides implementation support for Syncfusion components across 14 p
 | Platform | Controls | Status |
 |----------|----------|--------|
 | React | 94 | ✅ Full Support |
+| PureReact | 17 | ✅ Full Support |
 | Angular | 97 | ✅ Full Support |
 | Vue.js | 95 | ✅ Full Support |
 | JavaScript | 97 | ✅ Full Support |

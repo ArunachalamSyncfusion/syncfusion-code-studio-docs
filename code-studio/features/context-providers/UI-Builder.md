@@ -31,61 +31,47 @@ After implementing features with Syncfusion components, proper licensing is requ
 - **Trial License**: For evaluation purposes with trial installer or NuGet packages
 - **Licensed Version**: For commercial use with licensed installer (no license key registration required)
 
-### Quick Start Example
+### Basic Prompt Structure
+```
+Develop [feature description] for [platform] application using Syncfusion components with [specific requirements]
+```
+
+**Required Elements:**
+- Include "Syncfusion" keyword (activates UI Builder)
+- Specify target platform (React, Angular, Vue, etc.)
+- Describe desired functionality
+
+## Developer Workflow
+
+### Step 1: Initial Implementation
+Start with a feature request:
 
 ```
-Enhance a customer management dashboard React application using Syncfusion components with a data grid and search functionality.
+Create a customer management dashboard React application using Syncfusion components with data grid and search functionality.
 ```
 
 UI Builder will analyze your request and provide the necessary information for implementing the feature using appropriate Syncfusion components.
 
+### Step 2: Feature Enhancement
+Build upon the initial implementation:
+
+```
+Enhance the existing customer management dashboard React application using Syncfusion components to include Excel export and form validation.
+```
+
 ## How UI Builder Works
 
-### The Intelligent Implementation Process
-
-UI Builder operates through a sophisticated process where Code Studio handles initial analysis and UI Builder provides essential implementation data:
-
-#### Step 1: Prompt Analysis (Code Studio)
-Code Studio processes your natural language prompt to understand user intentions and feature requirements.
-
-#### Step 2: Platform Detection (Code Studio)
-Code Studio automatically identifies the target framework from the project structure or prompt specification (defaults to React if not specified).
-
-#### Step 3: Supported Controls API Response (UI Builder)
+#### Supported Controls API Response
 UI Builder responds to the supportedControls API call by providing a comprehensive list of available Syncfusion controls specific to the detected platform.
 
-<img src="../feature-images/supportedcontrols.png" alt="Supported Controls List" />
+<img src="../feature-images/supportedcontrolsnew.png" alt="Supported Controls List" />
 
-#### Step 4: Context API Response (UI Builder)
-UI Builder responds to the context API call by providing three essential components:
+#### Context API Response
+UI Builder responds to the Context API call by providing three essential components: System Prompt, Layout Configuration, and Controls Metadata.
 
-<img src="../feature-images/contextmode.png" alt="Context Mode" />
+<img src="../feature-images/contextmodenew.png" alt="Context Mode" />
 
-##### System Prompt
-- Converts business requirements into technical specifications.
-- Applies industry standards and Syncfusion recommended patterns.
-- Identifies potential integration considerations.
-- Maps user requirements to optimal Syncfusion controls.
-
-<img src="../feature-images/systemprompt.png" alt="System Prompt" />
-
-##### Layout Configuration
-- Determines optimal layout structures for responsive design.
-- Calculates ideal positioning for selected controls.
-- Ensures consistent theming across components.
-- Maintains accessibility compliance throughout implementation.
-
-<img src="../feature-images/layoutconfiguration.png" alt="Layout Configuration" />
-
-##### Controls Metadata
-- Configures appropriate default values and properties for each control.
-- Establishes necessary event bindings and data source connections.
-- Manages all imports, references, and package requirements.
-- Ensures proper component lifecycle management.
-
-<img src="../feature-images/metadata.png" alt="Controls Metadata" />
-
-#### Step 5: AI Model Implementation
+#### AI Model Implementation
 Based on the information provided by UI Builder (supported controls list, system prompt, layout configuration, and metadata), the AI model begins implementation in the application.
 
 ### AI Model Integration
@@ -127,63 +113,6 @@ UI Builder provides implementation support for Syncfusion components across 14 p
 - **Navigation**: Menu, Toolbar, Tabs, Sidebar, Accordion
 - **AI Components**: AIAssistView, ChatUI, SmartPaste, SmartTextArea
 - **Editors**: RichTextEditor, PDFViewer, ImageEditor, WordProcessor
-
-## Writing Effective Prompts
-
-### Basic Structure
-```
-Develop [feature description] for [platform] application using Syncfusion components with [specific requirements]
-```
-
-### Effective Prompt Examples
-
-```
-Create a comprehensive sales dashboard with interactive charts and data filtering capabilities using Syncfusion React components.
-```
-
-```
-Extend the existing React dashboard application using Syncfusion components to include notification system and real-time updates.
-```
-
-### Prompt Requirements
-
-#### ✅ Must Include:
-- The word "Syncfusion" (required to activate UI Builder)
-- Platform specification (React, Angular, Vue, Blazor, etc.)
-- Clear description of functionality needed
-
-## Step-by-Step Tutorial
-
-### Building a Data Management Interface
-
-#### Step 1: Define Requirements
-```
-Develop a customer management system Angular application using Syncfusion components with CRUD operations and search functionality.
-```
-
-#### Step 2: AI Processing and Implementation
-Following your prompt, the system processes your request through:
-
-**UI Builder Analysis:**
-- **supportedControls Mode**: Identifies available Syncfusion controls for the Angular platform
-- **context Mode**: Selects optimal components (DataGrid, TextBox, DropDownList, Dialog) and provides layout configuration
-
-**Code Studio Implementation:**
-- Generates Angular components with modern best practices
-- Implements CRUD operations with proper data binding
-- Configures search and filtering functionality
-- Sets up responsive layout with consistent theming
-- Includes proper error handling and validation
-
-#### Step 3: Customize Implementation
-```
-Enhance the customer management system Angular application using Syncfusion components to include Excel export and form validation.
-```
-
-#### Step 4: Platform-Specific Optimization
-```
-Optimize the customer management system implementation of the Angular application using Syncfusion components with TypeScript best practices.
-```
 
 ## Best Practices
 

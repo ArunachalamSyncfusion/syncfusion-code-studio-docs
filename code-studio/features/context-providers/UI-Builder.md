@@ -1,20 +1,25 @@
-# UI Builder User Guide
+# Syncfusion UI Builder Guide
 
 ## Overview
 
-### What is UI Builder?
+UI Builder is a specialized tool that provides essential information for building user interfaces with Syncfusion components. When you describe what you want to create, it automatically analyzes your request and returns the technical guidance developers need for implementation.
 
-UI Builder is an AI-powered development assistant integrated into Syncfusion Code Studio. It provides essential implementation details and component metadata to enable feature development using Syncfusion components. By analyzing your requirements through natural language prompts, UI Builder intelligently delivers the necessary information and guidance for implementing your desired functionality with the most suitable Syncfusion components.
+### What UI Builder Provides
+
+- **Component Information**: Lists of available Syncfusion components for your platform
+- **Implementation Context**: Platform-specific guidelines and best practices  
+- **Layout Guidance**: Suggestions for structuring your interface effectively
+- **Component Metadata**: Technical details and documentation for each component
+- **Multi-Platform Support**: Works across 14 different development frameworks
 
 ### Key Benefits
 
-- **Smart Implementation**: Leverages Syncfusion components to efficiently build required features.
-- **Intelligent Component Selection**: Analyzes requirements and selects optimal Syncfusion controls.
-- **Multi-Platform Support**: Implements features across 14 platforms with platform-specific optimizations.
-- **Time-Saving**: Eliminates manual component research and configuration.
-- **Best Practices**: Applies Syncfusion's proven implementation patterns.
+- **Eliminates Documentation Search**: Get relevant component information instantly
+- **Ensures Accuracy**: Validates component availability for your specific platform
+- **Accelerates Development**: Reduces trial-and-error coding with proven patterns
+- **Platform Optimization**: Delivers framework-specific implementation guidance
 
-## Getting Started
+## Quick Start
 
 ### UI Builder Setup
 
@@ -24,147 +29,122 @@ UI Builder is an AI-powered development assistant integrated into Syncfusion Cod
 
 <img src="../feature-images/ui-builder.png" alt="UI Builder Modes" />
 
-### Syncfusion Component Licensing
+### Basic Usage
 
-After implementing features with Syncfusion components, proper licensing is required to run your application without licensing pop-ups. If you installed the trial setup or NuGet packages from nuget.org, you must register the Syncfusion license key in your application. Without proper licensing, a licensing pop-up will appear when running your application. The license key can be obtained from the [My Account » License and downloads section](https://www.syncfusion.com/account/downloads) of the Syncfusion® website. To obtain a license key, you will need one of the following:
-
-- **Trial License**: For evaluation purposes with trial installer or NuGet packages
-- **Licensed Version**: For commercial use with licensed installer (no license key registration required)
-
-### Basic Prompt Structure
-```
-Develop [feature description] for [platform] application using Syncfusion components with [specific requirements]
-```
-
-**Required Elements:**
-- Include "Syncfusion" keyword (activates UI Builder)
-- Specify target platform (React, Angular, Vue, etc.)
-- Describe desired functionality
-
-## Developer Workflow
-
-### Step 1: Initial Implementation
-Start with a feature request:
+Simply describe what you want to build using this format:
 
 ```
-Create a customer management dashboard React application using Syncfusion components with data grid and search functionality.
+Create a [feature description] for [platform] using Syncfusion components with [requirements]
 ```
 
-UI Builder will analyze your request and provide the necessary information for implementing the feature using appropriate Syncfusion components.
-
-### Step 2: Feature Enhancement
-Build upon the initial implementation:
-
+**Example:**
 ```
-Enhance the existing customer management dashboard React application using Syncfusion components to include Excel export and form validation.
+Create a customer dashboard for React using Syncfusion components with data grid, charts, and export functionality.
 ```
 
-## How UI Builder Works
+### Required Elements
 
-#### Supported Controls API Response
-UI Builder responds to the supportedControls API call by providing a comprehensive list of available Syncfusion controls specific to the detected platform.
+For UI Builder to activate and provide accurate results:
+
+1. **Include "Syncfusion"**: This keyword activates the UI Builder tool
+2. **Specify Platform**: Name your framework (React, Angular, Vue, Blazor, etc.)
+3. **Describe Functionality**: Explain what you want to build and key features needed
+
+### What You Get Back
+
+UI Builder automatically provides:
+- **System Prompts**: Platform-specific implementation guidelines
+- **Layout Configuration**: AI-generated structure suggestions based on your requirements
+- **Component Metadata**: Detailed information about available components
+
+### How UI Builder Works
+
+#### Supported Controls Response
+UI Builder provides a comprehensive list of available Syncfusion components for your specific platform:
 
 <img src="../feature-images/supportedcontrolsnew.png" alt="Supported Controls List" />
 
-#### Context API Response
-UI Builder responds to the Context API call by providing three essential components: System Prompt, Layout Configuration, and Controls Metadata.
+#### Context Mode Response
+UI Builder delivers detailed implementation guidance including system prompts, layout configuration, and component metadata:
 
 <img src="../feature-images/contextmodenew.png" alt="Context Mode" />
 
-#### AI Model Implementation
-Based on the information provided by UI Builder (supported controls list, system prompt, layout configuration, and metadata), the AI model begins implementation in the application.
+### Syncfusion License Setup
 
-### AI Model Integration
+After implementing features with Syncfusion components, proper licensing is required:
 
-#### Recommended Models
+**Trial Users:**
+- Register license key from [Syncfusion Account Portal](https://www.syncfusion.com/account/downloads)
+- Required for trial installations and NuGet packages from nuget.org
 
-- **GPT-4**: Advanced feature implementation with complex component integration
-- **Claude**: Precise implementation with optimization focus
+**Licensed Users:**
+- Licensed installer includes automatic license registration
+- No additional license key registration required
+
+**License Key Registration:**
+Add the license key to your application startup code to avoid licensing popups during development and production.
 
 ## Supported Platforms
 
-UI Builder provides implementation support for Syncfusion components across 14 platforms:
+UI Builder supports 14 platforms with varying component libraries:
 
-| Platform | Controls | Status |
-|----------|----------|--------|
-| React | 94 | ✅ Full Support |
-| PureReact | 17 | ✅ Full Support |
-| Angular | 97 | ✅ Full Support |
-| Vue.js | 95 | ✅ Full Support |
-| JavaScript | 97 | ✅ Full Support |
-| TypeScript | 97 | ✅ Full Support |
-| Blazor | 102 | ✅ Full Support |
-| ASP.NET Core | 99 | ✅ Full Support |
-| ASP.NET MVC | 99 | ✅ Full Support |
-| MAUI | 74 | ✅ Full Support |
-| WPF | 101 | ✅ Full Support |
-| WinForms | 125 | ✅ Full Support |
-| WinUI | 41 | ✅ Full Support |
-| Flutter | 25 | ✅ Full Support |
-| Java | 1 | ✅ Full Support |
-
-## Available Controls
-
-### Core Component Categories
-
-- **Data Management**: DataGrid, TreeGrid, PivotTable, Spreadsheet
-- **Charts & Visualization**: Charts (20+ types), Gauges, Maps, Diagram
-- **Input Controls**: TextBox, DatePicker, ColorPicker, FileUpload
-- **Navigation**: Menu, Toolbar, Tabs, Sidebar, Accordion
-- **AI Components**: AIAssistView, ChatUI, SmartPaste, SmartTextArea
-- **Editors**: RichTextEditor, PDFViewer, ImageEditor, WordProcessor
+| Platform | Components Available | 
+|----------|---------------------|
+| WinForms | 121 components |
+| Blazor | 102 components |
+| ASP.NET Core | 99 components |
+| Angular | 98 components |
+| TypeScript | 98 components |
+| Vue.js | 98 components |
+| WPF | 97 components |
+| JavaScript | 97 components |
+| React | 94 components |
+| MAUI | 74 components |
+| WinUI | 41 components |
+| Flutter | 25 components |
+| PureReact | 17 components |
+| Java | 1 component |
 
 ## Best Practices
 
-### For Optimal Implementation
+- **Be Specific**: "Create a customer form with validation" vs "Create a form"
+- **Include Features**: Mention export, search, responsive design, validation
+- **Name Platform Clearly**: Use Syncfusion supported platform like "React" and "JavaScript"
 
-1. **Include "Syncfusion" Keyword**: Always include "Syncfusion" in your prompt to trigger UI Builder activation.
-2. **Be Specific**: Include detailed functionality requirements.
-3. **Specify Platform**: Always mention the target framework for optimized implementation.
-4. **Include Data Context**: Describe data structure and relationships.
-5. **Request Features**: Specify needed capabilities (search, export, validation).
+## Key Limitations
 
-### Performance Optimization
-
-- Request virtual scrolling for large datasets
-- Specify lazy loading requirements
-- Include caching strategies
-- Mention responsive design needs
+- **15 component maximum** per request
+- **Exact component names** required (case-sensitive)
+- **Platform-specific** component availability varies
 
 ## Troubleshooting
 
-### Common Issues
+**UI Builder Not Activating**: Include "Syncfusion" keyword and specify platform explicitly (React, Angular, etc.)
 
-**UI Builder Not Activating**
-- Confirm that the prompt includes the "Syncfusion" keyword and the platform name.
-- Verify that the UI Builder tool is set to either Automatic or Ask First mode.
+**Wrong Platform Detection**: Use exact platform names early in request - "React" not "JavaScript framework"
 
-**Incorrect Platform Detection**
-- Specify platform explicitly in the prompt.
+**Generic Response**: Be more specific about functionality, include business context and specific features needed
 
-**Generic Implementation**
-- Provide more specific requirements.
-- Include business context and constraints.
-- Request detailed implementation examples.
+**Component Not Available**: Check Supported Platforms table or request component list for your platform
 
 ## FAQ
 
 **Does UI Builder create complete applications?**
 
-UI Builder provides the necessary component information and metadata that enables Code Studio to implement specific features using existing Syncfusion components. You integrate these implementations into your application structure.
+No, UI Builder provides implementation guidance and component information. Code Studio uses this information to build complete applications with appropriate Syncfusion components.
 
-**Can I modify the implemented features?**
+**Can I modify the code that Code Studio creates?**
 
-Yes! The implemented code using Syncfusion components is yours to customize and extend as needed.
+Yes, all code created by Code Studio using UI Builder guidance can be customized and extended to match your specific requirements.
 
-**Which AI models work best?**
+**Which AI models work best with UI Builder?**
 
-GPT-4 and Claude provide optimal results. Configure your preferred model in Code Studio settings.
+GPT and Claude provide optimal results when Code Studio implements features using UI Builder guidance. Configure your preferred model in Code Studio settings.
 
-**Is there a limit on feature implementation?**
+**Are there limits on UI Builder requests?**
 
-There are no limits on the number of features you can implement, subject to your AI model usage limits.
+UI Builder processes up to 15 components maximum per request.
 
 **Can UI Builder work with existing projects?**
 
-Yes! UI Builder provides the component information that enables the implementation of features using Syncfusion components that integrate with existing codebases.
+Yes, UI Builder provides component information that Code Studio can use to add Syncfusion features to existing applications.
